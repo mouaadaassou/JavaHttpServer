@@ -12,7 +12,7 @@ import java.net.Socket;
  * this class designed to be a web server, that accepts HTTP requests from a web
  * client, and return an appropriate response with all the HTTP metadata
  * 
- * @author moaad-novelis
+ * @author moaad aassou
  *
  */
 public class HttpServer {
