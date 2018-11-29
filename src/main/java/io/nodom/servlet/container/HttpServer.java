@@ -39,9 +39,6 @@ public class HttpServer {
 
 	public void await() throws IOException {
 		ServerSocket serverSocket = new ServerSocket(8080, 1, InetAddress.getByName("127.0.0.1"));
-		System.out.println("****************************************************\n");
-		System.out.println(WEB_ROOT);
-		System.out.println("****************************************************\n");
 		while (!shutdown) {
 			Socket socket = serverSocket.accept();
 			InputStream in = socket.getInputStream();
@@ -60,7 +57,7 @@ public class HttpServer {
 		}
 	}
 
-	public static void main(String[] args) throws IOException{
+	public static void main(String[] args) throws IOException {
 		HttpServer server = new HttpServer();
 		server.await();
 	}
